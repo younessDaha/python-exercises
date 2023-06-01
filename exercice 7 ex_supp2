@@ -1,0 +1,13 @@
+def sumNumbers(string):
+    numbers = string.split()  
+    total = 0
+
+    for num in numbers:
+        if num.isdigit():
+            total += int(num)
+
+    return total
+    #pour l'exécuter
+    string = "10 abc 20 de44 30 55fg 40"
+result = sumNumbers(string)
+print(result)
